@@ -9,7 +9,7 @@ while (!int.TryParse(System.Console.ReadLine(), out number))
     System.Console.Write("Введите число: ");
 }
 
-if (number < 0 || number > 7)
+if (number < 1 || number > 7)
 {
     System.Console.Write("Введенное число не соответствует условию");
 }
