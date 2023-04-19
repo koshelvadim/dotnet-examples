@@ -96,29 +96,29 @@
 //     return sum;
 // }
 
-// int number = ReadInt("число");
-// GetArray(number);
+int number = ReadInt("число");
+GetArray(number);
 
-// int ReadInt(string argument)
-// {
-//     System.Console.Write($"Введите число {argument}: ");
-//     int i;
+int ReadInt(string argument)
+{
+    System.Console.Write($"Введите число {argument}: ");
+    int i;
 
-//     while (!int.TryParse(System.Console.ReadLine(), out i))
-//     {
-//         System.Console.WriteLine("Это не число");
-//     }
-//     return i;
-// }
+    while (!int.TryParse(System.Console.ReadLine(), out i))
+    {
+        System.Console.WriteLine("Это не число");
+    }
+    return i;
+}
 
-// void GetArray(int number)
-// {
-//     ;
-//     int[] array = new int[number];
+void GetArray(int number)
+{
+    ;
+    int[] array = new int[number];
 
-//     for (int i = 0; i < number; i++)
-//     {
-//         array[i] = new Random().Next(1, 10);
-//         System.Console.Write($"{array[i]} ");
-//     }
-// }
+    for (int i = 0; i < number; i++)
+    {
+        array[i] = new Random().Next(0, 2);
+        System.Console.Write($"{array[i]} ");
+    }
+}
