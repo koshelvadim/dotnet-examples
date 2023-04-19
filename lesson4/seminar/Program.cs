@@ -97,7 +97,8 @@
 // }
 
 int number = ReadInt("число");
-GetArray(number);
+int[] array = GetArray(number);
+System.Console.WriteLine(string.Join(" ", array));
 
 int ReadInt(string argument)
 {
@@ -111,14 +112,14 @@ int ReadInt(string argument)
     return i;
 }
 
-void GetArray(int number)
+int[] GetArray(int number)
 {
-    ;
     int[] array = new int[number];
 
     for (int i = 0; i < number; i++)
     {
         array[i] = new Random().Next(0, 2);
-        System.Console.Write($"{array[i]} ");
     }
+    return array;
 }
+
