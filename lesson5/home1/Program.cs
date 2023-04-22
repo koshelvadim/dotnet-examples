@@ -50,7 +50,6 @@ int GetQuantityEven(int[] array)
 int length = ReadInt("количество элементов массива");
 int minValue = ReadInt("минимальное трехзначное значение элемента массива");
 int maxValue = ReadInt("максимальное трехзначное значение элемента массива");
-
 int[] Array = GetIntArray(length, minValue, maxValue);
 PrintArray(Array);
 int result = GetQuantityEven(Array);
