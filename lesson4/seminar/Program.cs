@@ -95,7 +95,7 @@
 //     }
 //     return sum;
 // }
-
+Console.WriteLine(5 / 10);
 int number = ReadInt("число");
 int[] array = GetArray(number);
 System.Console.WriteLine(string.Join(" ", array));
