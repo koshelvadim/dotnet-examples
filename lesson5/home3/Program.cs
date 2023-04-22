@@ -37,7 +37,7 @@ double[] GetDoubleArray(int length, int minValue, int maxValue)
     return array;
 }
 
-double FindeMaxElement(double[] array)
+double FindMaxElement(double[] array)
 {
     double MaxElement = array[0];
     for (int i = 1; i < array.Length; i++)
@@ -47,7 +47,7 @@ double FindeMaxElement(double[] array)
     return MaxElement;
 }
 
-double FindeMinElement(double[] array)
+double FindMinElement(double[] array)
 {
     double MinElement = array[0];
     for (int i = 1; i < array.Length; i++)
@@ -64,9 +64,9 @@ int maxValue = ReadInt("максимальное значение элемент
 
 double[] DoubleArray = GetDoubleArray(length, minValue, maxValue);
 PrintArray(DoubleArray);
-double max = FindeMaxElement(DoubleArray);
+double max = FindMaxElement(DoubleArray);
 System.Console.WriteLine($"максимальный элемент массива {max}");
-double min = FindeMinElement(DoubleArray);
+double min = FindMinElement(DoubleArray);
 System.Console.WriteLine($"минимальный элемент массива {min}");
 System.Console.WriteLine($"Разница максимального и минимального элементов {max - min}");
 
